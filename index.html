@@ -1,0 +1,79 @@
+
+<head>
+  <title>peter dykstra</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="peter dykstra">
+  <meta name="keywords" content="peter dykstra, petedykstra">
+  <meta name="author" content="peter dykstra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<style>
+  /* unvisited link */
+a:link {
+  color: black;
+    text-decoration: none;
+
+}
+
+/* visited link */
+a:visited {
+  color: black;
+      text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: underline;
+
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+p {
+  font-family: Verdana;
+}
+
+.highlighted {
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  transition: background-size .5s;
+}
+
+.highlighted.yellow {
+  background-image: linear-gradient(to top, yellow 60%, transparent 0);
+}
+
+.highlighted.pink {
+  background-image: linear-gradient(to top, pink 60%, transparent 0);
+}
+
+.highlighted.animating {
+  background-size: 0 auto;
+}
+
+</style>
+<body>
+  <p>
+ <span class="highlighted yellow">peter dykstra</span>
+</p>
+
+<p>
+  Creating, <span class="highlighted pink animating"><a href="http://notes.peterdykstra.com">exploring</a></span> and helping innovative <span class="highlighted pink animating"><a href="https://www.linkedin.com/in/petedykstra/">teams</a></span> grow.
+</p>
+<div style="width:500px;">
+<script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="153458/"></script>
+</div>
+
+  <script>
+    setTimeout(function() {
+  var animating = document.querySelectorAll('.highlighted.animating');
+  for (var i = 0; i < animating.length; i++) {
+    animating[i].classList.remove('animating');
+  }
+}, 3000);
+  </script>
